@@ -1,0 +1,25 @@
+.App-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.App-header .nav-bar{
+    display: flex;
+    gap: 20px;
+}
+  
+.About{
+    padding: 20px;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  background: black;
+  color:beige;
+}
+
