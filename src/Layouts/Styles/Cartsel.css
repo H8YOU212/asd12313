@@ -1,8 +1,30 @@
 .cart-section{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 150px;
     justify-items: center;
     align-items: center;
     gap: 30px;
-  }
+   
+}
+
+.cart-container{
+  border: 5px solid wheat;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+}
+
+.cart-link{
+  color: black;
+  background: white;
+  padding: 40px 40px;
+  border-radius: 32px;
+
+}
+
+.Wrapper{
+  display: block;
+  max-width: 1300px;
+  margin-left: 120px;
+
+}
