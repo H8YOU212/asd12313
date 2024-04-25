@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../Styles/Cartsel.css"
 import { Link } from 'react-router-dom'
 
@@ -9,11 +9,22 @@ const Cartsel = () => {
 
   const carttext = "asd";
   const idphoto = URL;
+  const [items, setItems] = useState([])
 
 
+  useEffect(() => {
 
-  const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+    async function fetch() {
+      const responce = fetch("http://localhost:3200/items")
+      setItems(responce)
+    }
 
+
+    fetch()
+
+  }, [setItems])
+
+  console.log(items)
   return (
     <div className='Wrapper'>
 
@@ -21,9 +32,6 @@ const Cartsel = () => {
 
         <section className="cart-section">
 
-
-          {array.map((item, index) => <Link to={`/Cartpage/${index + 1}`} className='cart-link'><img src={idphoto} />
-            <div className="cart-text">{carttext}</div></Link>)}
 
 
 
