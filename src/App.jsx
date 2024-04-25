@@ -19,7 +19,7 @@ function App() {
           <Route element={<Store />} path="/store" />
           <Route element={<Contacts />} path="/contacts" />
           <Route element={<div>404</div>} path="/*" />
-          <Route element={<Cartpage/>} path="/Cartpage" />
+          <Route element={<Cartpage/>} path="/Cartpage/:id" />
         </Routes>
       </BrowserRouter>
     </div>
